@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Más allá de Luria con Luria — Jordi Peña‑Casanova</title>
+  <style>
+    :root{--bg:#f7f9fc;--card:#fff;--accent:#0ea5a4;--dark:#0f172a;--muted:#475569}
+    body{font-family:system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height:1.6; background:var(--bg); color:#111; margin:0; padding:0;}
+    header{background:linear-gradient(90deg,var(--dark),var(--accent)); color:white; padding:36px 20px;}
+    .wrap{max-width:1100px;margin:20px auto;padding:20px;}
+    .hero{background:var(--card);border-radius:12px;padding:20px;box-shadow:0 8px 28px rgba(2,6,23,.08)}
+    h1{margin:0 0 6px;font-size:30px}
+    p.lead{margin:0;color:#eef6f6}
+    .meta{font-size:14px;color:var(--muted);margin-top:6px}
+    .grid{display:grid;grid-template-columns:2fr 360px;gap:20px;margin-top:18px}
+    .card{background:var(--card);padding:16px;border-radius:10px;border:1px solid #e9f2f8;box-shadow:0 6px 18px rgba(2,6,23,.04)}
+    nav a{display:block;color:var(--dark);text-decoration:none;margin:8px 0;font-weight:700}
+    .svg-diag{width:100%;height:auto;border-radius:8px;padding:8px;background:#fcfffe;border:1px dashed #e2e8f0}
+    details{margin:8px 0;padding:10px;background:#fff;border-radius:8px;border:1px solid #eef6fb}
+    summary{font-weight:700;cursor:pointer}
+    .btn{display:inline-block;padding:10px 14px;background:var(--dark);color:#fff;border-radius:8px;text-decoration:none;font-weight:700;margin-top:8px}
+    .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .kbd{background:#f1f5f9;border-radius:6px;padding:6px 8px;font-weight:700;font-size:13px}
+    .muted{color:var(--muted);font-size:14px}
+    .quiz .option{display:block;padding:10px;border-radius:8px;border:1px solid #e6eef6;margin:8px 0;cursor:pointer}
+    .quiz .option.correct{border-color:green;background:#eefaf0}
+    .quiz .option.wrong{border-color:red;background:#fff2f2}
+    .hidden{display:none}
+    footer{margin-top:20px;text-align:center;color:var(--muted);font-size:14px;padding-bottom:40px}
+    @media(max-width:960px){.grid{grid-template-columns:1fr}.wrap{padding:12px}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap hero">
+    <h1>Más allá de Luria con Luria</h1>
+    <p class="lead">Actualización del marco funcional para la evaluación neuropsicológica por Jordi Peña‑Casanova</p>
+    <p class="meta">Autores: <strong>Ester Nuñez</strong>, <strong>Juan Patiño</strong> y <strong>Valentina Echenique</strong> — Curso de Neuropsicología (2025)</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="grid">
+    <section>
+      <article class="card" id="introduccion">
+        <h2>Introducción</h2>
+        <p>Este blog presenta el modelo conceptual propuesto por <strong>Jordi Peña‑Casanova</strong>, conocido como “Más allá de Luria con Luria”. Partiendo de la herencia de Luria, Peña‑Casanova plantea una visión integrada de funciones cerebrales organizadas en cinco unidades funcionales, incorporando hallazgos recientes de neurociencia y una perspectiva que considera el contexto sociocultural y etnogeográfico del individuo a lo largo de su ciclo vital.</p>
+
+        <h3 id="resumen">Resumen del modelo</h3>
+        <p>Las cinco unidades funcionales simplificadas son:</p>
+        <ol>
+          <li><strong>Unidad I — Primordial/Preferencial:</strong> Regulación de activación y soporte vital.</li>
+          <li><strong>Unidad II — Límbica/Paralímbica:</strong> Valoración emocional, motivación y memoria contextual.</li>
+          <li><strong>Unidad III — Telencefálica‑Cortical:</strong> Procesamiento sensoriomotor, lenguaje, gnosias y praxias.</li>
+          <li><strong>Unidad IV — Ganglios basales:</strong> Selección de comportamientos, refuerzo y aprendizaje.</li>
+          <li><strong>Unidad V — Cerebelosa:</strong> Supervisión predictiva y ajuste de la conducta.</li>
+        </ol>
+
+        <h3 id="aportaciones">Aportaciones principales</h3>
+        <ul>
+          <li>Integración explícita de circuits subcorticales y corticales.</li>
+          <li>Enfoque de desarrollo y filogenia: cómo emergen las funciones.</li>
+          <li>Incorporación del contexto sociocultural y etnogeográfico en la evaluación.</li>
+          <li>Evaluación más dinámica y multimodal.</li>
+        </ul>
+
+        <h3 id="implicaciones">Implicaciones para la evaluación</h3>
+        <p>El modelo promueve:</p>
+        <ul>
+          <li>Evaluaciones que combinan historia de vida, pruebas estandarizadas, observación ecológica, y neuroimagen.</li>
+          <li>Interpretaciones sistémicas que evitan la reducción a una sola localización cortical.</li>
+          <li>Adaptación cultural de instrumentos y toma en cuenta del ciclo vital.</li>
+        </ul>
+
+        <h3>Diagrama interactivo</h3>
+        <div class="svg-diag" aria-hidden="false">
+          <!-- Simplified interactive SVG; clicking labels highlights region descriptions below -->
+          <svg id="svgbrain" viewBox="0 0 900 360" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama interactivo de cinco unidades funcionales">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#0ea5a4"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+            </defs>
+            <rect x="10" y="10" width="880" height="340" rx="10" fill="#fbfeff" stroke="#e6f3f3"/>
+            <g transform="translate(60,30) scale(0.9)" id="regions">
+              <ellipse id="u1" cx="110" cy="220" rx="48" ry="32" fill="#fde68a" stroke="#f59e0b" data-title="Unidad I" data-desc="Regulación de activación y funciones vitales (tronco, sistema reticular)"/>
+              <path id="u2" d="M180 160 C210 120, 260 120, 290 160 C320 200, 270 240, 230 220 C200 205, 180 190, 180 160" fill="#fecdd3" stroke="#fb7185" data-title="Unidad II" data-desc="Valoración emocional, memoria contextual (sistemas límbicos)"/>
+              <path id="u3" d="M300 80 C380 30, 560 30, 700 90 C720 110, 720 170, 620 210 C520 250, 360 200, 300 140" fill="#dbeafe" stroke="#60a5fa" data-title="Unidad III" data-desc="Procesamiento cortical: lenguaje, gnosias, praxias, conciencia agente"/>
+              <circle id="u4" cx="410" cy="170" r="30" fill="#bbf7d0" stroke="#34d399" data-title="Unidad IV" data-desc="Ganglios basales: selección de respuesta y refuerzo"/>
+              <ellipse id="u5" cx="760" cy="240" rx="70" ry="40" fill="#f0f9ff" stroke="#93c5fd" data-title="Unidad V" data-desc="Cerebelo: predicción y ajuste motor/comportamental"/>
+            </g>
+          </svg>
+        </div>
+        <div class="card" id="region-info" style="margin-top:10px">
+          <strong id="r-title">Haz clic en una unidad del diagrama</strong>
+          <p id="r-desc" class="muted">Descripción interactiva de la unidad funcional seleccionada.</p>
+        </div>
+
+        <h3 id="actividades">Actividades (WebQuest)</h3>
+        <p>Distribuid tareas entre los integrantes: investigación bibliográfica, diseño de infografías, adaptación cultural y evaluación de casos.</p>
+
+        <details>
+          <summary>Tarea 1 — Comparar modelos</summary>
+          <p>Comparad Luria vs Peña‑Casanova y elaborad una tabla con fortalezas y limitaciones. Cread una infografía para la presentación.</p>
+        </details>
+        <details>
+          <summary>Tarea 2 — Caso clínico</summary>
+          <p>Analizad un caso real o ficticio aplicando las cinco unidades: identifiquen unidades afectadas, pruebas a aplicar y plan de intervención.</p>
+        </details>
+        <details>
+          <summary>Tarea 3 — Adaptación cultural</summary>
+          <p>Elegid una prueba estandarizada y proponed adaptaciones para otra población y justificad desde el marco de Peña‑Casanova.</p>
+        </details>
+
+        <h3>Mini‑quiz interactivo</h3>
+        <div class="card quiz" id="quiz1">
+          <p><strong>¿Cuál unidad se asocia principalmente con la valoración emocional y la memoria contextual?</strong></p>
+          <div class="option" data-correct="false">Unidad I</div>
+          <div class="option" data-correct="true">Unidad II</div>
+          <div class="option" data-correct="false">Unidad IV</div>
+          <div class="option" data-correct="false">Unidad V</div>
+          <div id="quiz-feedback" class="muted" style="margin-top:8px"></div>
+        </div>
+      </article>
+
+      <article class="card" style="margin-top:18px">
+        <h3>Ejemplo aplicado</h3>
+        <p>Paciente con desinhibición social tras traumatismo: se evalúan Unidad III (corteza prefrontal), Unidad II (amígdala y valoración contextual) y Unidad IV (circuitos de refuerzo). Además, se indaga el contexto cultural para entender la magnitud funcional del síntoma.</p>
+
+        <h3>Plantilla: plan de evaluación</h3>
+        <ol>
+          <li>Historia clínica y anamnesis socio‑cultural.</li>
+          <li>Exploración neurológica y pruebas de screening.</li>
+          <li>Pruebas estandarizadas adaptadas (lenguaje, memoria, atención, praxias).</li>
+          <li>Observación ecológica y entrevistas a familiares.</li>
+          <li>Integración con neuroimagen o biomarcadores si están disponibles.</li>
+        </ol>
+
+        <div style="margin-top:12px">
+          <a class="btn" id="download-html">Descargar HTML</a>
+          <a class="btn" id="download-bib" style="background:var(--accent);color:#002">Descargar referencias (APA7)</a>
+        </div>
+      </article>
+    </section>
+
+    <aside>
+      <nav class="card">
+        <h3>Índice</h3>
+        <a href="#introduccion">Introducción</a>
+        <a href="#resumen">Resumen</a>
+        <a href="#aportaciones">Aportaciones</a>
+        <a href="#implicaciones">Implicaciones</a>
+        <a href="#actividades">Actividades</a>
+      </nav>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Recursos clave</h3>
+        <ul class="muted">
+          <li>Peña‑Casanova, J., Sánchez‑Benavides, G., & Sigg‑Alonso, J. (2024). Updating functional brain units. <em>Cortex</em>.</li>
+          <li>Peña‑Casanova, J. (2018). Functional Organization... KnE Life Sciences.</li>
+          <li>Peña‑Casanova, J. (2007). <em>Neurología de la conducta y neuropsicología</em>. Médica Panamericana.</li>
+        </ul>
+        <div style="margin-top:10px">
+          <button class="btn" id="show-sources" style="background:var(--accent);color:#002">Ver bibliografía APA7</button>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:14px">
+        <h3>Comentarios</h3>
+        <p class="muted">Añade observaciones del equipo y guárdalas localmente (esta función usa almacenamiento local del navegador).</p>
+        <textarea id="note" rows="6" style="width:100%;padding:8px;border-radius:8px;border:1px solid #e6eef6"></textarea>
+        <div class="actions">
+          <button class="btn" id="save-note">Guardar</button>
+          <button class="btn" id="load-note" style="background:var(--accent);color:#002">Cargar</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="card hidden" id="bib-section" style="margin-top:18px">
+    <h2>Referencias en formato APA 7</h2>
+    <ol>
+      <li>Peña‑Casanova, J., Sánchez‑Benavides, G., & Sigg‑Alonso, J. (2024). Updating functional brain units: Insights far beyond Luria. <em>Cortex</em>, 174, 19–69. https://doi.org/10.1016/j.cortex.2024.02.004</li>
+      <li>Peña‑Casanova, J. (2018). Functional Organization of the Brain and Psychic Activity: A View Beyond Luria (With Luria). In Proceedings of the Fifth International Luria Memorial Congress. KnE Life Sciences. https://kneopen.com/kne-life/article/view/3329/</li>
+      <li>Peña‑Casanova, J., & Sigg‑Alonso, J. (s.f.). Functional Systems and Brain Functional Units: Anatomical aspects [PDF]. ResearchGate.</li>
+      <li>Peña‑Casanova, J. (2007). <em>Neurología de la conducta y neuropsicología</em>. Médica Panamericana.</li>
+    </ol>
+  </section>
+
+  <section class="card" id="conclusion" style="margin-top:18px">
+    <h2>Conclusión</h2>
+    <p>El equipo considera que la propuesta de Peña‑Casanova actualiza de forma valiosa el marco funcional luriano, aportando una mirada más integrada, dinámica y contextualizada para la evaluación neuropsicológica.</p>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="text-align:center;color:var(--muted);font-size:13px;padding:20px 0">
+    © 2025 — Ester Nuñez, Juan Patiño y Valentina Echenique — Plantilla educativa interactiva
+  </div>
+</footer>
+
+<script>
+// Interactivity: region click shows info
+document.querySelectorAll('#regions [id^="u"]').forEach(function(el){
+  el.style.cursor='pointer';
+  el.addEventListener('click', function(){
+    var title = el.getAttribute('data-title') || 'Unidad';
+    var desc = el.getAttribute('data-desc') || '';
+    document.getElementById('r-title').textContent = title;
+    document.getElementById('r-desc').textContent = desc;
+    // highlight selected
+    document.querySelectorAll('#regions [id^="u"]').forEach(function(x){ x.style.opacity=0.6; });
+    el.style.opacity=1;
+  });
+});
+
+// Quiz behavior
+document.querySelectorAll('.quiz .option').forEach(function(opt){
+  opt.addEventListener('click', function(){
+    var correct = opt.getAttribute('data-correct') === 'true';
+    if(correct){ opt.classList.add('correct'); document.getElementById('quiz-feedback').textContent = '¡Correcto! Unidad II se asocia con valoración emocional.'; }
+    else { opt.classList.add('wrong'); document.getElementById('quiz-feedback').textContent = 'No es correcto. Intenta de nuevo.'; }
+    // disable further clicks
+    document.querySelectorAll('.quiz .option').forEach(function(x){ x.style.pointerEvents='none'; });
+  });
+});
+
+// Toggle bibliography
+document.getElementById('show-sources').addEventListener('click', function(){
+  document.getElementById('bib-section').classList.toggle('hidden');
+  window.location.hash = '#recursos';
+});
+
+// Save / Load notes using localStorage
+document.getElementById('save-note').addEventListener('click', function(){
+  var txt = document.getElementById('note').value;
+  localStorage.setItem('neuro_note', txt);
+  alert('Nota guardada localmente en este navegador.');
+});
+document.getElementById('load-note').addEventListener('click', function(){
+  var txt = localStorage.getItem('neuro_note') || '';
+  document.getElementById('note').value = txt;
+});
+
+// Download HTML (creates blob)
+document.getElementById('download-html').addEventListener('click', function(){
+  var blob = new Blob([document.documentElement.outerHTML], {type: 'text/html'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'mas_alla_de_luria_con_luria_final.html';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// Download bibliography as plain text file
+document.getElementById('download-bib').addEventListener('click', function(){
+  var bib = `Peña-Casanova, J., Sánchez-Benavides, G., & Sigg-Alonso, J. (2024). Updating functional brain units: Insights far beyond Luria. Cortex, 174, 19–69. https://doi.org/10.1016/j.cortex.2024.02.004\n\nPeña-Casanova, J. (2018). Functional Organization of the Brain and Psychic Activity: A View Beyond Luria (With Luria). KnE Life Sciences. https://kneopen.com/kne-life/article/view/3329/\n\nPeña-Casanova, J., & Sigg-Alonso, J. (s.f.). Functional Systems and Brain Functional Units: Anatomical aspects [PDF]. ResearchGate.\n\nPeña-Casanova, J. (2007). Neurología de la conducta y neuropsicología. Médica Panamericana.`;
+  var blob = new Blob([bib], {type: 'text/plain'});
+  var url = URL.createObjectURL(blob);
+  var a = document.createElement('a');
+  a.href = url;
+  a.download = 'referencias_APA7.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+
+</body>
+</html>
